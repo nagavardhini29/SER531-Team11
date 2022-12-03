@@ -1,6 +1,6 @@
 # SER531-Team11
 
-Team Members
+**Team Members**
 
 1. Harshitha Maripally
 2. Naga Vardhini Garugu
@@ -9,6 +9,7 @@ Team Members
 
 
 **Steps to run the project:**
+
 By performing the actions listed below, we launched an EC2 instance on AWS for a free, publicly accessible SPARQL endpoint:
 •  If you do not already have an AWS account, create one. Then log in, and on the EC2 page of the AWS Console, choose ”Launch Instance” from the orange ”Launch Instance” button’s dropdown menu.
 
@@ -43,17 +44,17 @@ fifth column. Keep the Type value set to ”Custom TCP” and click ”Save rule
 
 • Click the launch instance button and you can see the instance state as running.
 
-Plugin:
+**Plugin:**
 
 
 We used cellfie plugin to generate Individuals using the data collected using SeatGeek API and Google events API (SearAPI).
 
-**Deployment**
+**Deployment:**
 
 
 We deployed the application to Salesforce's Platform as a service, which is Heroku. Heroku is extremely compatible with NodeJS and the application is hosted and configured to be available at https://nearme-app.herokuapp.com/.
 
 
-Youtube - 
+**Youtube** - https://youtu.be/jfj0oNdFSCI
 
-Google Drive - https://drive.google.com/drive/folders/1CcIs39cajtJZwxi4ftbGcE2luEWrD_2-?usp=sharing
+**Google Drive** - https://drive.google.com/drive/folders/1CcIs39cajtJZwxi4ftbGcE2luEWrD_2-?usp=sharing
