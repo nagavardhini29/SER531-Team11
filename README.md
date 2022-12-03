@@ -50,6 +50,14 @@ fifth column. Keep the Type value set to ”Custom TCP” and click ”Save rule
 
 We used cellfie plugin to generate Individuals using the data collected using SeatGeek API and Google events API (SearAPI).
 
+** Steps to run Node.js application: **
+
+• Install and check node js version
+
+• Once nodejs is installed, run command - npm install
+
+• After all modules are installed, run - node app.js
+
 **Deployment:**
 
 
