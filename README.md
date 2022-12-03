@@ -48,7 +48,7 @@ Plugin:
 
 We used cellfie plugin to generate Individuals using the data collected using SeatGeek API and Google events API (SearAPI).
 
-Deployment:
+**Deployment**
 
 
 We deployed the application to Salesforce's Platform as a service, which is Heroku. Heroku is extremely compatible with NodeJS and the application is hosted and configured to be available at https://nearme-app.herokuapp.com/.
