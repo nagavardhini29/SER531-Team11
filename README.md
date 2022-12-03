@@ -21,10 +21,15 @@ By performing the actions listed below, we launched an EC2 instance on AWS for a
 •  By default, Fuseki uses port 3030, thus you can add a rule for it by selecting ”Edit Inbound Rules” under ”Inbound Rules” on the Security tab after clicking the sg-long-hex-number security group name under ”Security groups.”
 •  Click ”Add rule” to add a new rule with the ”Port range” of 3030. To set the sixth column to 0.0.0.0/0 like the others, choose ”Anywhere-IPv4” from the options in the
 fifth column. Keep the Type value set to ”Custom TCP” and click ”Save rules” at the bottom of the page.
-
+• Click the launch instance button and you can see the instance state as running.
 
 Plugin:
+We used cellfie plugin to generate Individuals using the data collected using SeatGeek API and Google events API (SearAPI).
 
-We used cellfie plugin to generate RDF files using the data collected using SeatGeek API.
+Deployment:
+We deployed the application to Salesforce's Platform as a service, which is Herkou. Heroku is extremely compatible with NodeJS and the application is hosted and configured to be available at https://nearme-app.herokuapp.com/.
+
+
 Youtube - 
-Google Drive - 
+
+Google Drive - https://drive.google.com/drive/folders/1CcIs39cajtJZwxi4ftbGcE2luEWrD_2-?usp=sharing
