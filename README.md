@@ -42,7 +42,8 @@ By performing the actions listed below, we launched an EC2 instance on AWS for a
 fifth column. Keep the Type value set to ”Custom TCP” and click ”Save rules” at the bottom of the page.
 
 
-• Click the launch instance button and you can see the instance state as running.
+• Click the launch instance button and you can see the instance state as running. It can be found at http://54.215.205.233:3030/#/
+
 
 **Plugin:**
 
