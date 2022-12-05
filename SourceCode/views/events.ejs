@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NearME Events</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://wallpapercave.com/wp/wp2848043.jpg");
+  min-height: 100%;
+}
+
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.container  {
+ margin-top: 200px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container .row {
+  margin: 0 auto;
+}
+
+.box{
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.w3-btn{
+  height: 39px;
+}
+
+.w3-quarter{
+  margin-top: 10px;
+}
+
+.searchbtn{
+  margin-top: 100px;
+}
+
+input[type="text"]{ padding: 10px 10px; line-height: 1px; }
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="/" class="w3-bar-item w3-button w3-wide">NearMe</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/events" class="w3-bar-item w3-button"><i class="fa fa-plus"></i>&nbsp;&nbsp;Events</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+
+  <a href="/events" onclick="w3_close()" class="w3-bar-item w3-button">Events</a>
+</nav>
+
+  <!-- The Tour Section -->
+<br><br><br>
+      <h2 class="w3-wide w3-center">Events</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+<form class="" action="/fetchevents" method="post">
+  <div class="w3-row-padding">
+
+    <div class="w3-quarter">
+      <input class="w3-input w3-border" name="eventCity" type="text" placeholder="Event City">
+    </div>
+
+    <div class="w3-quarter">
+      <select class="w3-input w3-select w3-border" name="state">
+      <option value="" disabled selected>Choose event state</option>
+      <option value="AK">AK - Alaska</option>
+      <option value="AL">AL - Albama</option>
+      <option value="AZ">AZ - Arizona</option>
+      <option value="CA">CA - California</option>
+      <option value="CO">CO - Colorado</option>
+      <option value="ID">ID - IDAHO</option>
+      <option value="KS">KS - KANSAS</option>
+      <option value="LA">LA - Louisiana</option>
+      <option value="MI">MI - Michigan</option>
+      <option value="MT">MT - Montana</option>
+      <option value="NM">NM - New Mexico</option>
+      <option value="OR">OR - Oregon</option>
+      <option value="TX">TX - Texas</option>
+      <option value="UT">UT - Utah</option>
+      <option value="WA">WA - Washington</option>
+
+    </select>
+    </div>
+
+  <div class="w3-quarter">
+  <select class="w3-input w3-select w3-border" name="eventtype">
+  <option value="" disabled selected>Choose event type</option>
+  <option value="sports">Sports</option>
+  <option value="concert">Concert</option>
+  <option value="theater">Theater</option>
+  <option value="dance">Dance</option>
+  <option value="comedy">Comedy</option>
+  <option value="hockey">Hockey</option>
+  <option value="family">Family</option>
+  <option value="boxing">boxing</option>
+</select>
+  </div>
+
+  <div class="w3-quarter">
+    <input class="w3-btn w3-pink" type="submit" style="width:100%;" name="Search" value="Search">
+  </div>
+
+</div>
+</form>
+
+
+<br><br><br>
+      <!-- <div class="box">
+        <div class="w3-panel w3-light-grey w3-padding-16 w3-card">
+<h3 class="w3-center">Band Template</h3>
+<div class="w3-content" style="max-width:600px">
+<div class="w3-row">
+  <p>eekepokdowkdoe edeidieiej eidiejdiejd</p>
+  <a href="#">date</a>
+  <a href="#">event id</a>
+  <div class="w3-col m6">
+    <a href="tryw3css_templates_band.htm" target="_blank" class="ws-btn w3-padding-large w3-teal" >Demo</a>
+  </div>
+
+</div>
+</div>
+</div>
+      </div> -->
+
+
+
+
+<br>
+<!-- Footer -->
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
