@@ -11,6 +11,7 @@
 **Steps to run the project:**
 
 By performing the actions listed below, we launched an EC2 instance on AWS for a free, publicly accessible SPARQL endpoint:
+
 •  If you do not already have an AWS account, create one. Then log in, and on the EC2 page of the AWS Console, choose ”Launch Instance” from the orange ”Launch Instance” button’s dropdown menu.
 
 
@@ -48,7 +49,7 @@ fifth column. Keep the Type value set to ”Custom TCP” and click ”Save rule
 **Plugin:**
 
 
-We used cellfie plugin to generate Individuals using the data collected using SeatGeek API and Google events API (SearAPI).
+We used cellfie plugin to generate Individuals using the data collected using SeatGeek API and Google events API (Serp API).
 
 **Steps to run Node.js application:**
 
